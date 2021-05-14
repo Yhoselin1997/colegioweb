@@ -9,17 +9,13 @@ const Layout = ({ withSlider = false, children }) => {
   return (
     <>
       <Navbar dynamic={withSlider} />
+      {withSlider && (
+        <Slider />
+      )}
       <Container>
-        {withSlider && (
-          <Slider />
-        )}
         {children}
       </Container>
-      <div>
-        <Container>
-          <Footer/>
-        </Container>
-      </div>
+      <Footer/>
     </>
   );
 };
