@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const RendimientoAcd = () => {
     return(
-        <div className="App">
-            <h1>Rendimiento Academico</h1>
-        </div>
+        <Layout>
+            <h1>Rendimiento academico</h1>
+            <p>lorem ipsum</p>
+        </Layout>
     )
 }
 

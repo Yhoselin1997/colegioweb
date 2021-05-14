@@ -1,0 +1,50 @@
+.containerCA{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxCA{
+    position: relative;
+    width: 200px;
+    height:  300px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+.boxCA .imgBxCA{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.boxCA .imgBxCA .imgCA{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.boxCA:hover .imgBxCA .imgCA{
+    opacity: 0;
+}
+.boxCA .contentCA{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.boxCA:hover .contentCA{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}

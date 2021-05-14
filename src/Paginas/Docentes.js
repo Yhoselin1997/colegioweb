@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const Docentes = () => {
     return(
-        <div className="App">
-            <h1>Docentes</h1>
-        </div>
+        <Layout>
+        <h1>Docentes</h1>
+        <p>lorem ipsum</p>
+      </Layout>
     )
 }
 

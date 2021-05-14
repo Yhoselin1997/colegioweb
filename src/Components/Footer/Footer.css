@@ -1,0 +1,126 @@
+.footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+    background: #3044a5;
+}
+.footer .containerF{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+.footer .containerF .sec .h2F{
+    position: relative;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footer .containerF .sec .h2F::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: yellow;
+}
+.footer .containerF .sec .pF{
+    color: white;
+    padding-top: 5%;
+    font-size: 0.8rem;
+}
+.sci{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-gap:20px;
+}
+.sci .Lisci{
+    list-style: none;
+}
+.sci .Lisci .aH{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #3e56cb;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 0px;
+}
+.sci .Lisci .aH:hover{
+    background: #6380fe;
+}
+.sci .Lisci .aH .fa{
+    color: white;
+    font-size: 20px;
+}
+.contact{
+
+    position: relative;
+}
+.contact .LiCn{
+    list-style: none;
+}
+.contact .LiCn .aCn{
+    color: #f7f7f7;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.contact .LiCn .aCn:hover{
+    color: yellow;
+}
+.location{
+    position: relative;
+}
+.location .LiLc{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+.location .LiLc .spanF:nth-child(1){
+    color: white;
+    font-size: 20px;
+}
+.location .LiLc .spanF{
+    color: white;
+}
+.contact .LiLc .spaF:hover{
+    color: yellow;
+}
+.copyrighText{
+    width: 100%;
+    background: #1f3389;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+}
+.logoFooter{
+    width: 50%;
+    height: none;
+}
+@media (max-width: 991px){
+    .footer{
+        padding: 40px;
+    }
+    .footer .containerF{
+        grid-template-columns: repeat(2,1fr);    
+    }
+    .copyrighText{
+        padding: 8px 40px;
+    }
+    .logoFooter{
+        width: 35%;
+        height: none;
+    }
+}
+@media (max-width: 768px){
+    .footer .containerF{
+        grid-template-columns: repeat(1,1fr);    
+    }   
+}

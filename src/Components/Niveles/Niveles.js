@@ -6,19 +6,21 @@ import secundaria from './secundaria.jpeg'
 
 const Niveles = () => {
     return (
+        <div>
+            <h2 className="tituloNiv">NIVELES EDUCATIVOS</h2><br/><br/>
         <div className="body2">
         <div className="container2">
             <div className="card2">
                 <div className="imgBx2">
-                    <img src={inicial} alt='imagen'></img>
+                    <img src={inicial} alt='imagen' className="imgNiv"></img>
                 </div>  
                 <div className="content2">
-                    <h2 >NIVEL INICIAL</h2>
+                    <h3>NIVEL INICIAL</h3>
                 </div>   
             </div>
             <div className="card2">
                 <div className="imgBx2">
-                    <img src={primaria} alt='imagen'></img>
+                    <img src={primaria} alt='imagen' className="imgNiv"></img>
                 </div>  
                 <div className="content2">
                     <h3>NIVEL PRIMARIA</h3>
@@ -26,14 +28,15 @@ const Niveles = () => {
             </div>
             <div className="card2">
                 <div className="imgBx2">
-                    <img src={secundaria} alt='imagen'></img>
+                    <img src={secundaria} alt='imagen' className="imgNiv"></img>
                 </div>  
                 <div className="content2">
-                    <h4>NIVEL SECUNDARIA</h4>
+                    <h3>NIVEL SECUNDARIA</h3>
                 </div>   
             </div>
         </div>
         
+        </div>
         </div>
     )
 }

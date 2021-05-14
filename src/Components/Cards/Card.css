@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-.container{
-    margin-left: 20px;
-    position: relative;
-    z-index: 1;
+.containerCard{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 1100px;
 }
-.container .card{
+.containerCard .cardC1{
     position: relative;
-    width: 230px;
-    height: 300px;
-    margin: 20px 40px;
+    width: 250px;
+    height: 250px;
+    margin: 5px 0px;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -22,75 +18,7 @@
     box-shadow:0 10px 25px rgb(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
 }
-.container .card .imgBox{
-    position: relative;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    transition: 0.3s ease-in-out;
-}
-.container .card:hover .imgBox{
-    transform: translateY(-40px);
-    justify-content: center;
-}
-.container .card .imgBox img {
-    max-width: 100%;
-    margin: 0 0 20px;
-    transition: 0.3s ease-in-out;
-    justify-content: center;
-}
-.container .card:hover .imgBox h2{
-    color: white;
-}
-.content .card .content{
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.container .card .content .a {
-    position: relative;
-    top: 5%;
-    display: inline-block;
-    padding: 12px 30px;
-    background: white;
-    border-radius: 40px;
-    font-weight:600;
-    letter-spacing: 1px;
-    color: #111 !important;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.logoUEN{
-    height: 100px;
-    width: 100px;
-}
-.logoArmada{
-    height: 100px;
-    width: 100px;
-}
-.container .cardC2{
-    
-    position: relative;
-    width: 230px;
-    height: 300px;
-    margin: 20px 40px;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    background: #011432;
-    box-shadow:0 10px 25px rgb(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-}
-.container .cardC2 .imgBoxC2{
+.containerCard .cardC1 .imgBoxC1{
     margin-top: -60px;
     position: relative;
     display:  flex;
@@ -100,20 +28,20 @@
     padding: 20px;
     transition: 0.3s ease-in-out;
 }
-.container .cardC2:hover .imgBoxC2{
-    transform: translateY(-40px);
+.containerCard .cardC1:hover .imgBoxC1{
+    transform: translateY(-25px);
     justify-content: center;
 }
-.container .cardC2 .imgBoxC2 .imgC2 {
+.containerCard .cardC1 .imgBoxC1 .imgC1 {
     max-width: 100%;
     margin: 0 0 20px;
     transition: 0.3s ease-in-out;
     justify-content: center;
 }
-.container .cardC2:hover .imgBoxC2 h2{
-    color: #9C9C9C;
+.containerCard .cardC1:hover .imgBoxC1 .tamanio{
+    color: white;
 }
-.content .cardC2 .content2{
+.content .cardC2 .contentC2{
     position: absolute;
     bottom: 20px;
     display: flex;
@@ -126,7 +54,7 @@
 
 }
 
-.container .cardC2 .contentC2 .a1{
+.containerCard .cardC1 .contentC1 .a0{
     top: 105%;
     border-top-left-radius: 100px;    
     display: inline-block;
@@ -140,16 +68,37 @@
     text-transform: uppercase;
     margin-left: 0%;
 }
-.container .cardC2 .contentC2 .sizeC2 .a1{
-    margin-top: 200px;
-    margin-left: -110px;
+.containerCard .cardC1 .contentC1 .sizeC1 .a0{
+    margin-top: 150px;
+    margin-left: -155px;
 }
-.container .cardC3{
+.logoUEN{
+    height: 100px;
+    width: 100px;
+}
+.logoArmada{
+    height: 100px;
+    width: 100px;
+}
+.containerCard .cardC2{
+    position: relative;
+    width: 280px;
+    height: 300px;
+    margin: 5px 0px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    background: #011432;
+    box-shadow:0 10px 25px rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.containerCard .cardC3{
     margin-left: 0;
     position: relative;
-    width: 230px;
-    height: 300px;
-    margin: 20px 40px;
+    width: 250px;
+    height: 250px;
+    margin: 5px 0px;
     display:  flex;
     justify-content: center;
     align-items: center;
@@ -157,8 +106,8 @@
     box-shadow:0 10px 25px rgb(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
 }
-.container .cardC3 .imgBoxC3{
-    margin-top: -60px;
+.containerCard .cardC3 .imgBoxC3{
+    margin-top: -25px;
     position: relative;
     display:  flex;
     justify-content: center;
@@ -167,17 +116,17 @@
     padding: 20px;
     transition: 0.3s ease-in-out;
 }
-.container .cardC3:hover .imgBoxC3{
+.containerCard .cardC3:hover .imgBoxC3{
     transform: translateY(-40px);
     justify-content: center;
 }
-.container .cardC3 .imgBoxC3 .imgC3{
+.containerCard .cardC3 .imgBoxC3 .imgC3{
     max-width: 100%;
     margin: 0 0 20px;
     transition: 0.3s ease-in-out;
     justify-content: center;
 }
-.container .cardC3:hover .imgBoxC3 h2{
+.containerCard .cardC3:hover .imgBoxC3 h2{
     color: white;
 }
 .content .cardC3 .content3{
@@ -192,7 +141,7 @@
     visibility: hidden;
 }
 
-.container .cardC3 .contentC3 .a2{
+.containerCard .cardC3 .contentC3 .a2{
     top: 105%;
     border-top-left-radius: 100px;    
     display: inline-block;
@@ -206,8 +155,8 @@
     text-transform: uppercase;
     margin-left: 0%;
 }
-.container .cardC3 .contentC3 .sizeC3 .a2{
-    margin-top: 200px;
+.containerCard .cardC3 .contentC3 .sizeC3 .a2{
+    margin-top: 150px;
     margin-left: -160px;
 }
 .letra{
@@ -217,5 +166,20 @@
     font-size: 1.6rem;
 }
 .top{
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.post{
+    border-bottom: 1px solid #000;
+    font-size: xx-small;
+}
+.escuela{
+    height: 200px;
+    width: 200px;
+}
+.texto{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
 }

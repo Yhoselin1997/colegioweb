@@ -17,7 +17,7 @@ const menuItems = [
   {url: '', name: 'Actividades', submenus: [
     {url: '/academica', name: 'Académica'},
     {url: '/deportivo', name: 'Deportivo'},
-    {url: '/social-cultural', name: 'Social-Cultural'},
+    {url: '/socialCultural', name: 'Social Cultural'},
     {url: '/interinstitucional', name: 'Interinstitucional'},
     {url: '/psicopedagogico', name: 'Psicopedagógico'},
     {url: '/proyectosEst', name: 'Proyectos estudiantes'},

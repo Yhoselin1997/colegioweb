@@ -13,7 +13,7 @@ import Autoridades from './Paginas/Autoridades';
 import PoliticaInst from './Paginas/PoliticaInst';
 import Academica from './Paginas/Academica';
 import Deportivo from './Paginas/Deportivo';
-import Sociocultural from './Paginas/Sociocultural';
+import SocialCultural from './Paginas/SocialCultural';
 import Interinstitucional from './Paginas/Interinstitucional';
 import Psicopedagogico from './Paginas/Psicopedagogico';
 import ProyectosEst from './Paginas/ProyectosEst';
@@ -42,8 +42,8 @@ function App() {
           <Route path="/politicaInst" component={PoliticaInst} />
           <Route path="/academica" component={Academica} />
           <Route path="/deportivo" component={Deportivo} />
-          <Route path="/sociocultural" component={Sociocultural} />
-          <Route path="/insterinstitucional" component={Interinstitucional} />
+          <Route path="/socialCultural" component={SocialCultural} />
+          <Route path="/interinstitucional" component={Interinstitucional} />
           <Route path="/psicopedagogico" component={Psicopedagogico} />
           <Route path="/proyectosEst" component={ProyectosEst} />
           <Route path="/galeriaAct" component={GaleriaAct} />

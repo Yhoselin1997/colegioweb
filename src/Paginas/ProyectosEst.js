@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const ProyectosEst = () => {
     return(
-        <div className="App">
-            <h1>ProyectosEst</h1>
-        </div>
+        <Layout>
+            <h1>Proyectos Estudiantes</h1>
+            <p>lorem ipsum</p>
+        </Layout>
     )
 }
 

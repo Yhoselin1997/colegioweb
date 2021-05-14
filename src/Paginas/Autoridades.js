@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const Autoridades = () => {
     return(
-        <div className="App">
+        <Layout>
             <h1>Autoridades</h1>
-        </div>
+            <p>lorem ipsum</p>
+        </Layout>
     )
 }
 

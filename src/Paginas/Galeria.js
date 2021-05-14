@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const Galeria = () => {
     return(
-        <div className="App">
+        <Layout>
             <h1>Galeria</h1>
-        </div>
+            <p>lorem ipsum</p>
+        </Layout>
     )
 }
 

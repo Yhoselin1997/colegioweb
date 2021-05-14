@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const PoliticaInst = () => {
     return(
-        <div className="App">
+        <Layout>
             <h1>Politica Institucional</h1>
-        </div>
+            <p>lorem ipsum</p>
+      </Layout>
     )
 }
 

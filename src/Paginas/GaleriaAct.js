@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const GaleriaAct = () => {
     return(
-        <div className="App">
+        <Layout>
             <h1>Galeria de actividades</h1>
-        </div>
+            <p>lorem ipsum</p>
+      </Layout>
     )
 }
 

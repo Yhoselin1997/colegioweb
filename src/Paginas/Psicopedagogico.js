@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const Psicopedagógico = () => {
     return(
-        <div className="App">
-            <h1>Psicopedagógico</h1>
-        </div>
+        <Layout>
+            <h1>Psicopedagogico</h1>
+            <p>lorem ipsum</p>
+        </Layout>
     )
 }
 

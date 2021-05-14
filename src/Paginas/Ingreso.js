@@ -1,10 +1,13 @@
 import React from 'react';
 
+import Layout from '../Components/Layout';
+
 const Ingreso = () => {
     return(
-        <div className="App">
+        <Layout>
             <h1>Ingreso</h1>
-        </div>
+            <p>lorem ipsum</p>
+        </Layout>
     )
 }
 

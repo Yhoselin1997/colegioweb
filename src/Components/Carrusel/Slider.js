@@ -1,37 +1,53 @@
-import React, { useEffect, useState } from "react";
-import sliderImage from "./sliderImage";
-import Arrows from "./Arrows";
-import Dots from "./Dots";
-import SliderContent from "./SliderContent";
-import "./slider.css";
+import React from 'react'
 
-const len = sliderImage.length - 1;
+import Carousel from 'react-bootstrap/Carousel'
 
-function Slider() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
-    }, 5000);
-    return () => clearInterval(interval)
-  }, [activeIndex]);
+import slide1 from './slide1.jpg'
+import slide2 from './slide2.jpg'
+import slide3 from './slide3.jpg'
 
-  return (
-    <div className="slider-container">
-      <SliderContent activeIndex={activeIndex} />
-      <Arrows
-        prevSlide={() =>
-          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-        }
-        nextSlide={() =>
-          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-        }
-      />
-      <Dots
-        activeIndex={activeIndex}
-        onclick={(activeIndex) => setActiveIndex(activeIndex)}
-      />
-    </div>
-  );
+import './Slider.css'
+
+const Slider = () => {
+    return (
+        <div className="carrusel">
+        <Carousel fade className="carrusel w-100" expand="lg">
+            <Carousel.Item>
+                <img
+                className=" d-block w-100 carrusel"
+                src={slide1}
+                alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit hibero</p>
+                </Carousel.Caption>
+            </Carousel.Item>  
+            <Carousel.Item>
+                <img
+                className="d-block w-100 carrusel"
+                src={slide2}
+                alt="Second slide"
+                />
+                <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Nulla vitae elit hibero</p>
+                </Carousel.Caption>
+            </Carousel.Item> 
+            <Carousel.Item>
+                <img
+                className="d-block w-100 carrusel"
+                src={slide3}
+                alt="thirty slide"
+                />
+                <Carousel.Caption>
+                    <h3>Tirthy slide label</h3>
+                    <p>Nulla vitae elit hibero</p>
+                </Carousel.Caption>
+            </Carousel.Item>  
+        </Carousel>
+        </div>
+    )
 }
-export default Slider;
+
+export default Slider
