@@ -26,6 +26,7 @@ import Academico from './Paginas/Academico';
 import Galeria from './Paginas/Galeria';
 import Comunicados from './Paginas/Comunicados'
 import MainModal from './Components/MainModal';
+import Convocatorias from './Paginas/Convocatorias'
 
 import './App.scss';
 
@@ -55,6 +56,7 @@ function App() {
           <Route path="/academico" component={Academico} />
           <Route path="/galeria" component={Galeria} />
           <Route path="/comunicados" component={Comunicados} />
+          <Route path="/convocatorias" component={Convocatorias} />
         </Switch>
       </Router>
     </>

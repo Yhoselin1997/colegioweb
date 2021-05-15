@@ -8,7 +8,7 @@ import Targeta from '../Components/Targeta/targeta'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 
-import ImgCard1 from '../img/2da olimpiada.jpeg'
+import ImgCard1 from '../img/becas.jpg'
 import ImgCard2 from '../img/becas.jpg'
 import ImgCard3 from '../img/encuentro.jpeg' 
 
@@ -64,6 +64,7 @@ const Inicio = () => {
           </Card>
         </CardGroup>      
         <div>
+          <h2>NUESTRA UBICACIÓN</h2>
           <iframe
           className="maps" 
           title="ubicacion" 

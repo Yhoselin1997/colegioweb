@@ -34,7 +34,9 @@ const Cards = () => {
         </div>
         <div className="contentC3">
           <div className="sizeC3">
-            <a href="#asdf" className="a2"> Ver </a>
+            <NavLink className="a2" to="/convocatorias">
+                Ver
+            </NavLink>
           </div>
         </div>
       </div>

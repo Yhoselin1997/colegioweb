@@ -3,22 +3,22 @@ import React from 'react';
 import Layout from '../Components/Layout';
 import CardAcademica from '../Components/Academica/CardAcademica'
 
-import logo from '../img/logo.png'
+import evento from '../img/Evento.png'
 const Academica = () => {
     return(
         <Layout>
-            <div> 
-                <h2>academico</h2>
-                <CardAcademica
-                title='hola'
-                image={logo}
-                content='aaa'
+            <h2 className="">ACADEMICO</h2>
+            <div className="row">
+            <CardAcademica
+                title='1er CICLO DE VIDEOCONFERENCIAS'
+                image={evento}
+                content='AFRONTAMIENTO SOCIOEDUCATIVO PARA FAMILIAS DE PANDEMIA'
                 />
                 <CardAcademica
-                title='hola'
-                image={logo}
-                content='aaa'
-                />
+                title='1er CICLO DE VIDEOCONFERENCIAS'
+                image={evento}
+                content='AFRONTAMIENTO SOCIOEDUCATIVO PARA FAMILIAS DE PANDEMIA'
+                 />
             </div>
         </Layout>
     )
