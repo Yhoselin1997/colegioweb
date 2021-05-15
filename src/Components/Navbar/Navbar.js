@@ -8,11 +8,11 @@ import c from './Navbar.module.css';
 const menuItems = [
   {url: '/', name: 'Inicio'},
   {url: '', name: 'Institucional', submenus: [
-    {url: '/mision', name: 'Misión'},
-    {url: '/vision', name: 'Visión'},
-    {url: '/historia', name: 'Historia'},
-    {url: '/autoridades', name: 'Autoridades'},
-    {url: '/politicaInst', name: 'Política Institucional'},
+    {url: '/institucional/mision', name: 'Misión'},
+    {url: '/institucional/vision', name: 'Visión'},
+    {url: '/institucional/historia', name: 'Historia'},
+    {url: '/institucional/autoridades', name: 'Autoridades'},
+    {url: '/institucional/politicaInst', name: 'Política Institucional'},
   ]},
   {url: '', name: 'Actividades', submenus: [
     {url: '/academica', name: 'Académica'},

@@ -27,6 +27,7 @@ import Galeria from './Paginas/Galeria';
 import Comunicados from './Paginas/Comunicados'
 import MainModal from './Components/MainModal';
 import Convocatorias from './Paginas/Convocatorias'
+import Institucional from './Paginas/Institucional';
 
 import './App.scss';
 
@@ -37,6 +38,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={Inicio} />
+          <Route path="/institucional/:section" component={Institucional} />
           <Route path="/mision" component={Mision} />
           <Route path="/vision" component={Vision} />
           <Route path="/historia" component={Historia} />
