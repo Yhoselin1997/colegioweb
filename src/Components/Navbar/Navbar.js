@@ -12,27 +12,27 @@ const menuItems = [
     {url: '/institucional/vision', name: 'Visión'},
     {url: '/institucional/historia', name: 'Historia'},
     {url: '/institucional/autoridades', name: 'Autoridades'},
-    {url: '/institucional/politicaInst', name: 'Política Institucional'},
+    {url: '/institucional/politicaInst', name: 'Política institucional'},
   ]},
   {url: '', name: 'Actividades', submenus: [
     {url: '/academica', name: 'Académica'},
     {url: '/deportivo', name: 'Deportivo'},
-    {url: '/socialCultural', name: 'Social Cultural'},
-    {url: '/interinstitucional', name: 'Interinstitucional'},
+    {url: '/social', name: 'Social'},
+    {url: '/cultural', name: 'Cultural'},
+    {url: '/cientifico', name: 'Científico'},
     {url: '/psicopedagogico', name: 'Psicopedagógico'},
-    {url: '/proyectosEst', name: 'Proyectos estudiantes'},
-    {url: '/galeriaAct', name: 'Galería'},
+    {url: '/interinstitucional', name: 'Interinstitucional'},
+    {url: '/proyectosDeEstudiantes', name: 'Proyectos estudiantes'},
+    {url: '/BandaDeMusica', name:'Banda de Música'}
   ]},
   {url: '', name: 'Aula Virtual', submenus: [
-    {url: '/rendimientoAcd', name: 'Rendimiento Académico'},
-    {url: '/ingreso', name: 'Ingreso'},
+    {url: '/ingreso', name: 'Ingreso'}
   ]},
-  {url: '', name: 'Admisiones', submenus: [
-    {url: '/docentes', name: 'Docentes'},
-    {url: '/estudiantes', name: 'Estudiantes'},
+  {url: '', name: 'Otras actividades', submenus: [
+    {url: '/boyScouts', name: 'Boy Scouts'},
+    {url: '/pandemia', name: 'Pandemia'}
   ]},
-  {url: '/academico', name: 'Académico'},
-  {url: '/galeria', name: 'Galería'},
+  {url: '/galeria', name: 'Galería'}
 ];
 
 const NavBar = ({dynamic = false}) => {
@@ -59,15 +59,16 @@ const NavBar = ({dynamic = false}) => {
       variant="dark"
       fixed="top"
       className={`${c.navbar} ${!dynamic ? c.sticky : ''}`}
+
     >
       <Container>
         <Navbar.Brand>
-          <img className={c.logo} alt="logo" src={logo} />
-          &nbsp;&nbsp;UEN
+          <img className={c.logo} alt={logo} src={logo} />
+          &nbsp;&nbsp;UENHP
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
+        <Navbar.Collapse  className={c.color} id="responsive-navbar-nav">
+          <Nav className="ml-auto" >
             {menuItems.map((menu, i) => (
               menu.submenus ? (
                 <NavDropdown key={i} className={c.dropdown} title={menu.name}>

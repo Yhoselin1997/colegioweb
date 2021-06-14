@@ -1,7 +1,11 @@
 .footer {
+  position: relative;
   background: #3044a5;
+  width: 100%;
+  height: auto;
 }
 .containerF {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -12,7 +16,6 @@
   font-weight: 400;
   margin-bottom: 15px;
 }
-
 .h2F::before {
   content: "";
   position: absolute;
@@ -87,7 +90,7 @@
 }
 .copyrightText {
   background: #1f3389;
-  padding: 1.4rem;
+  padding: 1.3rem;
   color: white;
   font-size: 0.85rem;
 }
@@ -97,22 +100,26 @@
   margin: 0;
 }
 @media (max-width: 991px) {
-  .footer {
+  .footer{
     padding: 40px;
   }
   .footer .containerF {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
   }
   .copyrighText {
-    padding: 8px 40px;
+    padding: 5px 30px;
   }
   .logoFooter {
-    width: 35%;
+    width: 20%;
     height: none;
   }
 }
 @media (max-width: 768px) {
+  .footer{
+    width: 100%;
+  }
   .footer .containerF {
     grid-template-columns: repeat(1, 1fr);
   }
+  
 }

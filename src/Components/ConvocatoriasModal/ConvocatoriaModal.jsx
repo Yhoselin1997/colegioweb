@@ -1,5 +1,6 @@
 import React from 'react'
 import {Modal, Button} from 'react-bootstrap';
+import c from './ConvocatoriaModal.module.css'
 
 const ConvocatoriaModal = ({ item, show, onClose }) => {
   if (!item) return null
@@ -14,13 +15,13 @@ const ConvocatoriaModal = ({ item, show, onClose }) => {
         <p>
           {item.content}
         </p>
-        <a href={`/documentos/${item.url}`} target="_blank" rel="noreferrer">
+        <a className={c.aCS} href={`/documentos/${item.url}`} target="_blank" rel="noreferrer">
           ver documento
         </a>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={onClose}>
-          Close
+          Cerrar
         </Button>
       </Modal.Footer>
     </Modal>

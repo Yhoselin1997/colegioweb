@@ -1,0 +1,34 @@
+[
+    {
+        "image":"PROGRAMAS COMPLEMENTARIOS.jpeg",
+        "title":"PROGRAMAS COMPLEMENTARIOS",
+        "content":"La Unidad Educativa Naval “Héroes del Pacífico”, en su compromiso de mejorar la calidad educativa y potencializar el nivel académico de nuestros estudiantes pone al servicio de la comunidad estudiantil los diferentes programas complementarios:",
+        "date":"11/06/2021",
+        "url":"REVISTA EXTRACURRICULAR.pdf",
+        "button": "Ver documento",
+        "nomEnlace1":"FORMULARIO DE PREINSCRIPCIÓN-PROGRAMAS COMPLEMENTARIOS (INICIAL Y PRIMARIA):",
+        "enlace1":"https://forms.gle/QTAjeDQvByreGymJ6",
+        "nomEnlace2":"FORMULARIO DE PREINSCRIPCIÓN-PROGRAMAS COMPLEMENTARIOS SECUNDARIA: ",
+        "enlace2":"https://forms.gle/QkFP4dy9DdExPVhE9",
+        "nomEnlace3":"FORMULARIO DE PREINSCRIPCIÓN-PROGRAMAS DE EDUCACIÓN ESPECIALIZADA SECUNDARIA: ",
+        "enlace3":"https://forms.gle/5EyeJ1ib7YEY64Rh8"
+    },    
+    {
+        "image":"Yo te cuido.jpeg",
+        "title":"Yo te cuido ",
+        "content":"La Unidad Educativa Naval “Héroes del Pacífico”, invita a todos los padres de familia a los talleres psicopedagógicos “Familias que promueven un buen trato”.",
+        "date":"26/05/2021",
+        "url":"Yo te cuido.pdf",
+        "button": "Ver documento"
+    },
+    {
+        "image":"2da olimpiada.jpeg",
+        "title":"2da olimpiada científica virtual 2021",
+        "content":"La Unidad Educativa Naval “Héroes del Pacífico”, invita a todos los estudiantes de los niveles Primario y Secundario de las Unidades Educativas Públicas, Privadas y de Convenio a nivel nacional, a participar de la 2da Olimpiada Científica Virtual 2021.",
+        "date":"29/04/2021",
+        "url":"2da Olimpiada cientifica.pdf",
+        "button":"Ver documento",
+        "nomEnlace1":"Ver formulario de inscripcion: ",
+        "enlace1":"https://forms.gle/Hm4ymV9L5J2GENQw8"
+    }
+]

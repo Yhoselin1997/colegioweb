@@ -1,0 +1,138 @@
+.containerN{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    height: 367px;
+    left: 9%;
+    background: #edf1f3;
+    margin: 10px 10px 10px 10px;
+}
+.imageBoxN{
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background: #131c46;
+}
+.imageN{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.detailsN{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 65%;
+    padding-top: 3%;
+    border: 5px 5px 5px 5px;
+}
+.contentN{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 10%;
+}
+.titleNot{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #2f2c79 !important;
+    padding-right: 10%;
+}
+.dateN{
+    position: relative;
+    top: -17px;
+    font-weight: bold;
+    font-size: 16px;   
+    color: #2f2c79 !important;
+    margin: none;
+}
+.Conta{
+    position: relative;
+    top: -40px;
+    padding-top: -100px;
+    padding-left: 65%;
+}
+.aCS{
+    background: #131c46;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+@media (max-width: 1080px){
+    .contentN{
+        text-align: justify;
+        padding-right: 10%;
+    }
+    .dateN{
+        position: relative;
+        top: -17px;
+        font-weight: bold; 
+        color: #2f2c79 !important;
+        margin: none;
+    }
+    .containerN{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        left: 9%;
+        background: #edf1f3;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .imageBoxN{
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .detailsN{
+        width: 100% !important;
+        height: auto;
+        padding-left: 10%;
+    }
+    .imageN{
+        left: initial;
+        max-width: 100%;
+        height: auto;
+    }
+    .aCS{
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 768px) {
+    .aCS{
+        font-size: 5px;
+    }
+    .containerN{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        height: 80%;
+        left:-9%;
+        background: #edf1f3;
+        margin: 60px 60px 60px 60px;
+    }
+    .titleNot{
+        font-size: 19px;
+    }
+    .contentN{
+        font-size: 11px;
+    }
+}
+

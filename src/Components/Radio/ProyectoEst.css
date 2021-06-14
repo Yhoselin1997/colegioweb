@@ -1,0 +1,105 @@
+.containerRadio{
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardRadio{
+    position: relative;
+    display: flex;
+    margin: 40px 0;
+}
+.playerRadio{
+    position: relative;
+    width: 350px;
+    background: #fff;
+}
+
+.imgBxRadio{
+    position: relative;
+    left: 15px;
+    width: 410px;
+    height: 307px;  
+    z-index: 1;
+}
+.imgRadio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.audioRadio{
+    display: inline-block;
+    margin-top: 62%;
+    width: 100%;
+}
+.contentBxRadio{
+    position: relative;
+    right: 5px;
+    width: 710px;
+    height: 300px;
+    background: #131c46;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px 20px 100px;
+}
+.contentBxRadio::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: #131c46;
+    z-index: -1;
+}
+.titleRadio{
+    font-size: 30px;
+    color: #fff;
+}
+.textRadio{
+    margin-top: 10px;
+    color: #fff;
+    align-items: justify;
+    text-align: justify;
+
+}
+.refRadio{
+    display: inline-block;
+    margin-top: 15px ;
+    color: #fff;
+    text-decoration: none ;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+@media (max-width: 1000px)
+{
+    .audioRadio{
+        display: inline-block;
+        margin-top: 62%;
+        width: 100%;
+    }
+    .cardRadio{
+        flex-direction: column;
+        max-width: 350px;
+    }
+    
+    .imgBxRadio{
+        width: 100%;
+        height: 250px;
+        left: 0;
+    }
+    .contentBxRadio{
+        width: 100%;
+        height: auto;
+        right: 0;
+        padding: 30px;
+        text-align: center;
+    }
+    .contentBxRadio::before{
+        top: 0;
+        bottom: 0;
+    }
+}

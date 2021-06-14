@@ -1,0 +1,38 @@
+.image{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    padding-top: -100%;  
+    float: left; 
+    font-size: 1.6vw;
+    text-align: justify;
+}
+.aCS{
+    background: #131c46;
+    color: #fff;
+    border:none;
+    box-shadow: none;
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    cursor: pointer;
+}
+@media (max-width: 1080px){
+.content{
+    font-size: 2.5vw;
+}    
+}
+

@@ -1,11 +1,28 @@
 .navbar {
   transition: background 1s;
+  font-size: 1.1rem;
+  color: #fff !important;
+  text-decoration: none;
+}
+.color {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-style: unset;
+  font-weight: 600;
+  color: #fff !important;
 }
 .logo {
   width: 45px;
 }
+.logoArmada{
+  position: relative;
+  width: 50px;
+  height: 60px;
+  left: 590%;
+}
 .dropdown {
   position: relative;
+
 }
 .dropdown div {
   background: #252440;
@@ -15,5 +32,9 @@
 }
 .sticky {
   position: sticky !important;
+}
+.nav-link{
+  color: #fff !important;
+  text-decoration: none;
 }
 

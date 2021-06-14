@@ -1,0 +1,65 @@
+.imageContainer{
+    background-image: url(./fondoConvo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+    position:relative;
+    z-index:1;
+    padding-bottom: 30%;
+    align-items: center;
+    text-align: center;
+}
+.imageContainer::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+}
+
+.titleContainer{
+    height: 50%;
+    color: #fff;
+    font-size: 3vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    letter-spacing: 0.3rem;
+}
+.container{
+    position: relative;
+    padding: 70px;
+    background: #fff;
+    color: #27255c;
+    cursor: pointer;
+    border-bottom: 2px solid #d1cfcf;
+    
+}
+.title{
+    position: absolute;
+    font-size: 2.3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding-left: 15%;
+    top: 10%;
+    text-transform: uppercase;
+}
+.content{
+    position: absolute;
+    padding-left: 15%;
+    font-size: 1.5vw;
+    top: 43%;
+    color: #000;
+}
+.date{
+    font-weight: bold;
+    font-size: 1.5vw;   
+    color: #2f2c79;
+}

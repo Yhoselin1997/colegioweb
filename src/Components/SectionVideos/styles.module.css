@@ -1,0 +1,23 @@
+
+.swiper-container {
+  width: 100%;
+  left: -9px;
+  padding-top: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.video{
+  width: 500px;
+  height: 300px;
+  left: -40px;
+}
+@media (max-width: 768px) {
+  .video{
+    width: 100%;
+    height: 100%;
+  }
+}
