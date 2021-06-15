@@ -56,7 +56,7 @@ export default function SectionVideos() {
     "slideShadows": true
     }} 
     className={sl.mySwiper}>
-          <div>
+         <div>
           {loading && (
             <p>Cargando</p>
           )}
@@ -78,6 +78,7 @@ export default function SectionVideos() {
       </div>
         ))}         
       </div>
+      
     </Swiper>
     </>
     )
