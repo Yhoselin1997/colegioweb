@@ -1,20 +1,66 @@
 [
     {
-        "img": "imagen1.jpg"
+        "img": "imagen1.jpg",
+        "name": "UENHP"
     },
     {
-        "img":"fondo.png"
+        "img":"fondo.png",
+        "name": "UENHP"
     },
     {
-        "img": "imagen2.jpg"
+        "img": "imagen2.jpg",
+        "name": "UENHP"
     },
     {
-        "img":"imagen3.jpg"
+        "img":"imagen3.jpg",
+        "name": "UENHP"
     },
     {
-        "img": "imagen4.jpeg"
+        "img": "imagen4.jpeg",
+        "name": "UENHP"
     },
     {
-        "img":"imagen5.jpg"
+        "img":"imagen5.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"auditorio.jpeg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img2.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img6.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img7.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img12.jpeg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img13.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img14.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img20.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img30.jpg",
+        "name":"UENHP"
+    },
+    {
+        "img":"img31.jpg",
+        "name":"UENHP"
     }
 ]

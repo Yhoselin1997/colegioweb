@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="sec">
               <h4 className="h2F">UENHP</h4>
               <img src={logo} className="logoFooter" alt="logo" />
-              <p className="pF"> UNIDAD EDUCATIVA NAVAL "HÉROES DEL PACÍFICO"</p>
+              <p className="pF"> UNIDAD EDUCATIVA NAVAL <br/> "HÉROES DEL PACÍFICO"</p>
               <ul className="sci">
                 <li className="Lisci">
                   <a className="aH" href="https://www.facebook.com/Unidad-Educativa-Naval-h%C3%A9roes-Del-Pac%C3%ADfico-101976272112453"><FaFacebookF /></a>
@@ -37,22 +37,22 @@ const Footer = () => {
               </ul>
             </div>
             <div className="sec contact">
-              <h4 className="h2F">CONTACTOS</h4>
+              <h4 className="h3F">CONTACTOS</h4>
               <ul className="info">
                 <li className="LiCn">
                   <AiFillPhone /><br />
                   <span></span>
-                    <a className="aCn" >Secretaría general: (Telf./Fax) 2281821</a><br />
-                    <a className="aCn" > Secretaría académica: Telf. 2284346 </a>
+                    <a className="aCn" href="tel:+59122281821" >Secretaría general: (Telf./Fax) 2281821</a><br />
+                    <a className="aCn" href="tel:+59122284346" > Secretaría académica: Telf. 2284346 </a>
                 </li>
                 <li className="LiCn">
                   <AiOutlineMail />
-                  <p className="pF" ><a className="aCn" >Correo: heroesdelpacifico@uenaval.edu.bo</a></p>
+                  <p className="pF" ><a className="aCn" href="/" >Correo: heroesdelpacifico@uenaval.edu.bo</a></p>
                 </li>
               </ul>
             </div>
             <div className="sec location">
-              <h4 className="h2F">NUESTRA DIRECCIÓN</h4>
+              <h4 className="h4F">NUESTRA DIRECCIÓN</h4>
               <ul>
                 <li className="LiLc"><GrLocation />
                   <span className="spanF">
@@ -67,7 +67,7 @@ const Footer = () => {
         </footer>
       </Container>
       <div className="copyrightText">
-        <p>Todos los derechos están reservados desarrollado por © UEN</p>
+        <p>Todos los derechos están reservados desarrollado por © UENHP</p>
       </div>
     </div>
   )

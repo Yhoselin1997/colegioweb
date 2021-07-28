@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import Cards from '../../Components/Cards/Cards'
 import Niveles from '../../Components/Niveles/Niveles'
@@ -12,25 +12,6 @@ import {Container} from 'react-bootstrap';
 
 import In from './Inicio.module.css';
 const Inicio = () => {
-  const [loading, setLoading] = useState(false);
-  const [items, setItems] = useState([]);
-  const [selectedItem, setSelectedItem] = useState(null)
-
-  const getData = async () => {
-      setLoading(true)
-      const resp = await fetch('/resources/Publicaciones.json')
-      const data = await resp.json()
-      setLoading(false)
-      setItems(data)
-  }
-  
-  const handleItemClick = (item) => () => {
-      setSelectedItem(item)
-  }
-
-  useEffect(() => {
-      getData()
-  }, [])
   return (
     <Layout withSlider>
         <Cards />

@@ -1,15 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../Components/Layout'
 import './Actividades.css'
 
 import CardSection from '../Components/CardSection/CardSection'
 
-
 const Deportivo = () => {
     const [loading, setLoading] = useState(false);
     const [items, setItems] = useState([]);
-    const [selectedItem, setSelectedItem] = useState(null)
-  
+
     const getData = async () => {
         setLoading(true)
         const resp = await fetch('/resources/Actividades/Deportivo.json')
@@ -17,11 +15,7 @@ const Deportivo = () => {
         setLoading(false)
         setItems(data)
     }
-    
-    const handleItemClick = (item) => () => {
-        setSelectedItem(item)
-    }
-  
+
     useEffect(() => {
         getData()
     }, [])
@@ -30,27 +24,25 @@ const Deportivo = () => {
             <div className="imageContainer">
                 <span className="titleContainer">Nuestras Actividades</span>
             </div>
-            
+
             <div>
-                     {loading && (
-                        <p>Cargando</p>
-                     )}
-                     {items.map((item, i) => (
-                        <div
-                            key={i}
-                            style={{cursor: 'pointer'}}
-                            onClick={handleItemClick(item)}
-                        >
-                             <CardSection
-                                title={item.title}
-                                video={item.video}
-                                image={`/imagenes/Deportivo/${item.img}`}
-                                content={`${item.content}`}
-                                url = {item.url}
-                                />
-                        </div>
-                    ))}         
-                </div>
+                {loading && (
+                    <p>Cargando</p>
+                )}
+                {items.map((item, i) => (
+                    <div
+                        key={i}
+                    >
+                        <CardSection
+                            title={item.title}
+                            video={item.video}
+                            image={`/imagenes/Deportivo/${item.img}`}
+                            content={`${item.content}`}
+                            url={item.url}
+                        />
+                    </div>
+                ))}
+            </div>
         </Layout>
     )
 }

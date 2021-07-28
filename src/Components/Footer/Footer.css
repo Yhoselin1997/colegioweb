@@ -3,6 +3,7 @@
   background: #3044a5;
   width: 100%;
   height: auto;
+  top:0px;
 }
 .containerF {
   width: 100%;
@@ -21,7 +22,37 @@
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 60px;
+  width: 80px;
+  height: 2px;
+  background: yellow;
+}
+.h3F {
+  position: relative;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.h3F::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 140px;
+  height: 2px;
+  background: yellow;
+}
+.h4F {
+  position: relative;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.h4F::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 240px;
   height: 2px;
   background: yellow;
 }

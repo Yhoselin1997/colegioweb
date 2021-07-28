@@ -6,42 +6,42 @@ import slide1 from './slide1.jpg'
 import slide2 from './slide2.jpg'
 import slide3 from './slide3.jpg'
 
-import './Slider.css'
+import sl from './Slider.module.css'
 const Slider = () => {
   return (
-    <div className="carrusel">
+    <div className={sl.carrusel}>
       <Carousel fade>
         <Carousel.Item>
-          <div className="recolor">
-            <img className="img" src={slide1}/>
+          <div className={sl.recolor}>
+            <img className={sl.img} src={slide1} alt={slide1}/>
           </div>
           <Carousel.Caption>
-            <h1 className="titleCar"> UNIDAD EDUCATIVA NAVAL</h1>
-            <h1 className="titleCar">"HÉROES DEL PACÍFICO"</h1>
-            <p className="Descrip">Ciencia, honor y disciplina.</p>
-            <p className="Content"> Formando a los mejores estudiantes del país desde el año 2014</p>
+            <h1 className={sl.titleCar}> UNIDAD EDUCATIVA NAVAL</h1>
+            <h1 className={sl.titleCar}>"HÉROES DEL PACÍFICO"</h1>
+            <p className={sl.Descrip}>Ciencia, honor y disciplina.</p>
+            <p className={sl.Content}> Formando a los mejores estudiantes del país desde el año 2014</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <div className="recolor">
-            <img className="img" src={slide2}/>
+        <div className={sl.recolor}>
+            <img className={sl.img} src={slide2} alt={slide2}/>
           </div>
           <Carousel.Caption>
-          <h1 className="titleCar"> UNIDAD EDUCATIVA NAVAL</h1>
-            <h1 className="titleCar">"HÉROES DEL PACÍFICO"</h1>
-          <p className="Descrip">Ciencia, honor y disciplina.</p>
-            <p className="Content"> Formando a los mejores estudiantes del país desde el año 2014</p>
+          <h1 className={sl.titleCar}> UNIDAD EDUCATIVA NAVAL</h1>
+            <h1 className={sl.titleCar}>"HÉROES DEL PACÍFICO"</h1>
+          <p className={sl.Descrip}>Ciencia, honor y disciplina.</p>
+            <p className={sl.Content}> Formando a los mejores estudiantes del país desde el año 2014</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-        <div className="recolor">
-            <img className="img" src={slide3}/>
+        <div className={sl.recolor}>
+            <img className={sl.img} src={slide3} alt={slide3}/>
           </div>
           <Carousel.Caption>
-          <h1 className="titleCar"> UNIDAD EDUCATIVA NAVAL</h1>
-            <h1 className="titleCar">"HÉROES DEL PACÍFICO"</h1>
-          <p className="Descrip">Ciencia, honor y disciplina.</p>
-            <p className="Content"> Formando a los mejores estudiantes del país desde el año 2014</p>
+          <h1 className={sl.titleCar}> UNIDAD EDUCATIVA NAVAL</h1>
+            <h1 className={sl.titleCar}>"HÉROES DEL PACÍFICO"</h1>
+          <p className={sl.Descrip}>Ciencia, honor y disciplina.</p>
+            <p className={sl.Content}> Formando a los mejores estudiantes del país desde el año 2014</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

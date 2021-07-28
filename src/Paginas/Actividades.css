@@ -1,5 +1,5 @@
 .imageContainer{
-    background-image: url(../img/fondoActividades.png);
+    background-image: url(./fondoActividades.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
@@ -10,7 +10,6 @@
     align-items: center;
     text-align: center;
 }
-
 .imageContainer::after{
     content:"";
     position:absolute;

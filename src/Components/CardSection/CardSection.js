@@ -20,7 +20,7 @@ const CardSection = ({title, video, image, content, url}) => {
                 allowfullscreen></iframe>
             </div>
             <div className={cs.detailsCS}>
-                    <img className={cs.imgCS} src={image}/>
+                    <img className={cs.imgCS} src={image} alt={image}/>
                     <a className={cs.aCS} href={url}>Ver documento</a>
             </div>
         </div>        

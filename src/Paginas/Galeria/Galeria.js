@@ -1,51 +1,47 @@
-import React, {useState, useEffect} from 'react';
-
+import React, { useState, useEffect } from 'react';
 import Layout from '../../Components/Layout';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import ga from './Galeria.module.css'
 
+import { SRLWrapper } from 'simple-react-lightbox';
 
 const Galeria = () => {
-    const [loading, setLoading] = useState(false);
-    const [items, setItems] = useState([]);
-    const [selectedItem, setSelectedItem] = useState(null)
+  const [loading, setLoading] = useState(false);
+  const [items, setItems] = useState([]);
 
-    const getData = async () => {
-        setLoading(true)
-        const resp = await fetch('/resources/galeria.json')
-        const data = await resp.json()
-        setLoading(false)
-        setItems(data)
-      }
-      const handleItemClick = (item) => () => {
-        setSelectedItem(item)
-      }
+  const getData = async () => {
+    setLoading(true)
+    const resp = await fetch('/resources/galeria.json')
+    const data = await resp.json()
+    setLoading(false)
+    setItems(data)
+  }
 
-      useEffect(() => {
-        getData()
-      }, [])
-    return(
-            <Layout>
-                <Container>
-                <div className={ga.container}>
-                <h2 style={{color:"#fff"}}>GALERIA </h2>
-                <Row>
-                {loading && (
-                    <p>Cargando</p>
-                )}
-                {items.map((item, i) => (
-                    <div
-                    key={i}
-                    onClick={handleItemClick(item)}
-                    >       
-                            <img className={ga.image} src={`/imagenes/Galeria/${item.img}`}/>
-                    </div>
-                ))}
-                  </Row>
+  useEffect(() => {
+    getData()
+  }, [])
+  return (
+    <Layout>
+      <Container>
+        <div className={ga.container}>
+          <SRLWrapper>
+            <Row>
+              {loading && (
+                <p>Cargando</p>
+              )}
+              {items.map((item, i) => (
+                <div
+                  key={i}
+                >
+                  <img className={ga.image} src={`/imagenes/Galeria/${item.img}`} alt={item.name} />
                 </div>
-                </Container>
-            </Layout>       
-    )
+              ))}
+            </Row>
+          </SRLWrapper>
+        </div>
+      </Container>
+    </Layout>
+  )
 }
 
 export default Galeria;

@@ -1,0 +1,22 @@
+[
+    {
+         "title":"ANIVERSARIO DE LA PAZ",
+         "content":"La Unidad Educativa Naval celebra los 212 años de gesta libertaria de la ciudad de La Paz. Felicidades La Paz!!!!!",
+         "videos": 
+             [
+                 {
+                 "url":"https://www.youtube.com/embed/3hjwx9uUgxE"        
+                 }
+             ]
+     },
+     {
+         "title":"SENSIBILIZACIÓN DE LA PREVENCIÓN DE TODAS LAS FORMAS DE VIOLENCIA",
+         "content":"La Ley establece medidas para la prevención y educación destinadas a erradicar el racismo y la discriminación. Crea el Comité Nacional Contra el Racismo y la Discriminación integrado por instancias públicas de la sociedad civil y organizaciones sociales. Establece las vías constitucional, administrativa y penal para acudir en casos de racismo y discriminación.",
+         "videos":
+         [
+             {
+                 "url":"https://www.youtube.com/embed/e2Oj3_x3lCA"
+             }
+         ]
+     }
+ ]

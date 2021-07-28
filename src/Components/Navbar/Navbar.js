@@ -12,7 +12,7 @@ const menuItems = [
     {url: '/institucional/vision', name: 'Visión'},
     {url: '/institucional/historia', name: 'Historia'},
     {url: '/institucional/autoridades', name: 'Autoridades'},
-    {url: '/institucional/politicaInst', name: 'Política institucional'},
+   // {url: '/institucional/politicaInst', name: 'Política institucional'},
   ]},
   {url: '', name: 'Actividades', submenus: [
     {url: '/academica', name: 'Académica'},
@@ -29,8 +29,8 @@ const menuItems = [
     {url: '/ingreso', name: 'Ingreso'}
   ]},
   {url: '', name: 'Otras actividades', submenus: [
-    {url: '/boyScouts', name: 'Boy Scouts'},
-    {url: '/pandemia', name: 'Pandemia'}
+    {url: '/boyScouts', name: 'GRUPO SCOUT NAVAL CRUX-UENHP'},
+    {url: '/pandemia', name: 'GRUPO SCOUT NAVAL ALMTE MIGUEL GRAU S.'}
   ]},
   {url: '/galeria', name: 'Galería'}
 ];

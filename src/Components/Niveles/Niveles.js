@@ -11,7 +11,7 @@ const Niveles = () => {
         <div className={ni.container}>
             <div className={ni.box}>
                 <div className={ni.imgBx}>
-                    <img className={ni.image} src={inicial}/>
+                    <img className={ni.image} src={inicial} alt={inicial}/>
                 </div>
                 <div className={ni.content}>
                     <div>
@@ -21,7 +21,7 @@ const Niveles = () => {
             </div>
             <div className={ni.box}>
                 <div className={ni.imgBx}>
-                    <img className={ni.image} src={primaria}/>
+                    <img className={ni.image} src={primaria} alt={primaria}/>
                 </div>
                 <div className={ni.content}>
                     <div>
@@ -31,7 +31,7 @@ const Niveles = () => {
             </div>
             <div className={ni.box}>
                 <div className={ni.imgBx}>
-                    <img className={ni.image} src={secundaria}/>
+                    <img className={ni.image} src={secundaria} alt={secundaria}/>
                 </div>
                 <div className={ni.content}>
                     <div>

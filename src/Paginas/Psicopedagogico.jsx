@@ -9,8 +9,7 @@ import CardSection from '../Components/CardSection/CardSection'
 const Psicopedagogico = () => {
     const [loading, setLoading] = useState(false);
     const [items, setItems] = useState([]);
-    const [selectedItem, setSelectedItem] = useState(null)
-  
+    
     const getData = async () => {
         setLoading(true)
         const resp = await fetch('/resources/Actividades/Psicopedagogico.json')
@@ -19,10 +18,6 @@ const Psicopedagogico = () => {
         setItems(data)
     }
     
-    const handleItemClick = (item) => () => {
-        setSelectedItem(item)
-    }
-  
     useEffect(() => {
         getData()
     }, [])
@@ -37,11 +32,7 @@ const Psicopedagogico = () => {
                         <p>Cargando</p>
                      )}
                      {items.map((item, i) => (
-                        <div
-                            key={i}
-                            style={{cursor: 'pointer'}}
-                            onClick={handleItemClick(item)}
-                        >
+                        <div>
                              <CardSection
                                 title={item.title}
                                 video={item.video}

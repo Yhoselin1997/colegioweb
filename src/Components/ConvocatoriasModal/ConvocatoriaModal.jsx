@@ -1,5 +1,5 @@
 import React from 'react'
-import {Modal, Button} from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 import c from './ConvocatoriaModal.module.css'
 
 const ConvocatoriaModal = ({ item, show, onClose }) => {
